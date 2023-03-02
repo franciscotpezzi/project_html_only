@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 puro</title>
+    <title>HTML5 CSS interno</title>
+    <style>
+        body{
+            background-image:linear-gradient(rgb(225, 0, 255), rgb(153, 255, 0), rgb(0, 107, 128));
+        }
+        h1,h2{
+            text-align: center;
+        }
+        section{
+            background-image:linear-gradient(rgb(225, 0, 255), rgb(0, 107, 128));
+            display: block; 
+            float:left; 
+            width:600px; 
+            height: 550px;
+            margin-left: 10px;
+        }
+        article{
+            background-image:linear-gradient(rgb(255, 157, 0), rgb(128, 0, 73));
+            display: block; 
+            float: left; 
+            width: 400px; 
+            height: 550px;
+            margin-left: 10px;
+        }
+        aside{
+            background-image:linear-gradient(rgb(225, 0, 255), rgb(0, 107, 128));
+            display: block;
+            float: right; 
+            width: 300px; 
+            height: 550px;
+            margin-left: 10px;
+        }
+        footer{
+            clear: both; 
+            text-align:center;
+        }
+    </style>
 </head>
-<body style="background-image:linear-gradient(rgb(255, 191, 0), rgb(0, 255, 213)) ;">
+<body>
     <header>
-        <h1 style="text-align: center;">Trabalhando somente com HTML5.</h1>
-        <h2 style="text-align: center;">Primeiramente devemos fazer uso de um editor ou uma IDE<br>(que comporte linguagem HTML5) e um navegador.<h2>
+        <h1>Trabalhando somente com HTML5.</h1>
+        <h2>Primeiramente devemos fazer uso de um editor ou uma IDE<br>(que comporte linguagem HTML5) e um navegador.<h2>
             <ol>
                 <li>&lt!DOCTYPE HTML html&gt= Define que este documento é HTML5</li>
                 <li>&lthtml lang="pt-br"&gt = elemento raiz de uma página HTML e idioma do documento.</li>
@@ -29,7 +65,6 @@
     <nav>
         <table border="0" width="900" align="center">
             <tr>
-                <td height="89"><img src="imagens/logo.png"></td>
                 <td align="right">
                     <a href="">Familia</a>
                     <a href="">Quem somos</a>
@@ -38,23 +73,16 @@
             </tr>
         </table>        
     </nav>    
-    <section style="display: block; float:left; width:300px; height: 350px;" >
-        <h2>Seção</h2>
-        <p>Sobre automação de projects (classic)
-            In this article
-            
-                Opções de automação
-                Acompanhamento do andamento do projeto
-                Leitura adicional
-            
-            Você pode configurar fluxos de trabalho automáticos para manter o status dos cartões do projeto clássico em sincronia com os problemas e as solicitações de pull associados.</p>
+    <section>
+        <h2>Criando Repositório GitHub.</h2>
+        <p>Baixar o Git (https//git-scm.com), Download da ultima versão(64bit devido ao GitHubDesktop),<br> agora vamos buscar o GitHubDesktop(https://desktop.github.com), nos facilita a vida.Baixar para Windows(64bit). Instalamos na sequência 1° o Git /Next/Next até a hora de escolher o editor<br> Vamos usar o VSCode com Editor Padrão(Não use o inseder) /Next /Next / Next/ Next/ <br> Install, neste momento está se criando repositório local. Não inicie o programa.<br> De um Boothing na maquina. Instalar o GitHubDesktop, é rápido clique em Sign in GitHub.com. <br>Para isso temos que ter uma conta no GitHub.com para podermos ter um repositório remoto. Cliando uma conta no GitHub.com, acessamos pelo navegador https://github.com , a primeira vêz clicar em <br> em sign up, Crie sua conta com um nome de usuário, um endereço de email válido, e um Password<br>(as instruções estão abaixo) Verifique a conta (um texte) criar conta, vai perguntar que tipo de <br> usuário você é. Para que vai usar, qual o interesse. Recebe um email de confirmação. Complete a ficha com uma foto, nome e outros dados. Voltamos para o GitHubDesktop no Username or email address:Colocamos o nome cadastrado na nossa conta, e usamos o nosso Password cadastrado.<br> Já está tudo configurado.</p>
     </section>
-    <article style="display: block; float: left; width: 300px; height: 200px;">
+    <article>
         <h2>Gerenciando repositório GitHub</h2>
-        <p>Clicamos no GitHubDesktop, ele já faz uma atualização do repositório, localiza alterações<br>.Clicamos em abrir o VSCode o mesmo é aberto e já localizamos as alterações e em que arquivo foi<br> modificado (M), retornamos ao GitHubDesktop onde podemos ver onde houve a mudança e <br>qual foi. E para atualizar o nosso repositório local temos que fazer um Commit to master,<br> temos que colocar um título para o Commit e Clicar em Commit to master já fazemos a atualização<br> para o Repositório local. E para atualizar o GitHub devemos Clicar em Push origen,<br> após isto o nosso Repositório do GitHub estará Ok.
+        <p>Clicamos no GitHubDesktop, ele já faz uma atualização do repositório, localiza alterações<br>.Clicamos em abrir o VSCode o mesmo é aberto e já localizamos as alterações e em que arquivo foi<br> modificado (M), retornamos ao GitHubDesktop onde podemos ver onde houve a mudança e <br>qual foi. E para atualizar o nosso repositório local temos que fazer um Commit to master,<br> temos que colocar um título para o Commit e Clicar em Commit to master já fazemos a atualização<br> para o Repositório local. E para atualizar o GitHub devemos Clicar em Push origen,<br> após isto o nosso Repositório do GitHub estará Ok. 
         </p>
     </article>
-    <aside style="display: block; float: right; width: 600px; height: 550px;">
+    <aside>
         <h2>Lateral</h2>
         <p>Sobre automação de projects (classic)
             In this article
@@ -65,7 +93,7 @@
             
             Você pode configurar fluxos de trabalho automáticos para manter o status dos cartões do projeto clássico em sincronia com os problemas e as solicitações de pull associados.</p>
     </aside>
-    <footer style="clear: both; text-align:center;">
+    <footer>
         <h2>Rodapé</h2>
         <p>Sobre automação de projects (classic)
             In this article
